@@ -25,3 +25,20 @@
 	}	
 		
 ?>
+
+<br>
+
+<?php
+
+//nii mitu korda trüki välja "palju ", kui palju on vanust
+
+	for($i = 0; $i < $age; $i = $i +1)	{
+		
+		//see mida korratakse
+		echo "palju ";.$i." ";
+
+	}
+	
+	echo "õnne";
+
+?>
