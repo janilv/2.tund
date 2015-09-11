@@ -11,13 +11,13 @@
 
 		echo "jah";
 	
-		//kas e-post on tühi
+		//kas e-post on tÃ¼hi
 		if ( empty($_POST["email"])	) {
 			
-			//jah oli tühi
-			$email_error = "See väli on kohustuslik;"
+			//jah oli tÃ¼hi
+			$email_error = "See vÃ¤li on kohustuslik";
 	
-	
+	}
 
 }	
 	
