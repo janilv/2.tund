@@ -20,8 +20,19 @@
 	}
 
 	// kas parool on tühi
+			if ( empty($_POST["password"]) ) {
+			$password_error = "See väli on kohustuslik";
+		} else {
+			
+			//kui oleme siia jõudnud siis parool ei ole tühi
+			if(strlen($_POST["password"]) < 6) {
+				
+				$password_error = "Parool peab olema vähemalt 6 tähemärki pikk.";
+			}		
+		}
+	}
 	
-}	
+	
 	
 ?>
 <html>
@@ -30,7 +41,7 @@
 </head>
 <body>
 
-	<h2>Login</h2>
+	<h2>Logi sisse</h2>
 	<form action="login.php" method="post">
 	<input name="email" type="email" placeholder="E-post" > <?php echo $email_error ?>	<br><br>
 	<input name="password" type="password" placeholder="Parool" > <?php echo $password_error ?>	<br><br>
@@ -38,7 +49,8 @@
 	</form>
 	
 	
-	<h2>Create user</h2>
-	
+
+
+
 </body>
 </html>
