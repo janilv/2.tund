@@ -49,7 +49,10 @@
 	</form>
 	
 	
-
+	<h2>Tee kasutaja</h2>
+	<form action="login.php" method="post" >
+	<input name="email" type="email" placeholder="Email ">*<?php echo $email_error ?><br><br>
+	<input name="pass" type="password" placeholder="Parool ">*<?php echo $password_error ?><br><br>
 
 
 </body>
