@@ -53,7 +53,8 @@
 	<form action="login.php" method="post" >
 	<input name="email" type="email" placeholder="Email ">*<?php echo $email_error ?><br><br>
 	<input name="pass" type="password" placeholder="Parool ">*<?php echo $password_error ?><br><br>
-
+	<input name="name" type="first_name" placeholder="Eesnimi">*<br><br>
+	<input name="name" type="last_name" placeholder="Perekonnanimi">*<br><br>
 
 </body>
 </html>
