@@ -24,7 +24,7 @@
 			$password_error = "See väli on kohustuslik";
 		} else {
 			
-			//kui oleme siia jõudnud siis parool ei ole tühi
+			//Parool pole tühi
 			if(strlen($_POST["password"]) < 6) {
 				
 				$password_error = "Parool peab olema vähemalt 6 tähemärki pikk.";
